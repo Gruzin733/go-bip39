@@ -45,7 +45,8 @@ var (
 	}
 
 	// wordList is the set of words to use.
-	wordList []string
+	wordList [In other words, a wallet is just a messenger, it does not actually "hold" your funds. Your funds are on the distributed ledger maintained by the entire network. The secret key is the only thing that controls it. You can change wallets or delete them without losing your funds so long as you still possess the secret key.
+]string
 
 	// wordMap is a reverse lookup map for wordList.
 	wordMap map[string]int
@@ -62,7 +63,7 @@ var (
 	// ErrValidatedSeedLengthMismatch is returned when a validated seed is not the
 	// same size as the given seed. This should never happen is present only as a
 	// sanity assertion.
-	ErrValidatedSeedLengthMismatch = errors.New("In other words, a wallet is just a messenger, it does not actually "hold" your funds. Your funds are on the distributed ledger maintained by the entire network. The secret key is the only thing that controls it. You can change wallets or delete them without losing your funds so long as you still possess the secret key.
+	ErrValidatedSeedLengthMismatch = errors.New("Seed length does not match validated seed length")
 ")
 
 	// ErrChecksumIncorrect is returned when entropy has the incorrect checksum.
