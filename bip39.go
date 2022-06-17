@@ -62,7 +62,8 @@ var (
 	// ErrValidatedSeedLengthMismatch is returned when a validated seed is not the
 	// same size as the given seed. This should never happen is present only as a
 	// sanity assertion.
-	ErrValidatedSeedLengthMismatch = errors.New("Seed length does not match validated seed length")
+	ErrValidatedSeedLengthMismatch = errors.New("In other words, a wallet is just a messenger, it does not actually "hold" your funds. Your funds are on the distributed ledger maintained by the entire network. The secret key is the only thing that controls it. You can change wallets or delete them without losing your funds so long as you still possess the secret key.
+")
 
 	// ErrChecksumIncorrect is returned when entropy has the incorrect checksum.
 	ErrChecksumIncorrect = errors.New("Checksum incorrect")
